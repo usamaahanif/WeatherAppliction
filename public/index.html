@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Weather Application</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="images/images2.jpg" rel="shortcut icon" type="image/png">
+<style>
+    body{
+        background-image: url("images/image1.jpg");
+        background-repeat:no-repeat;
+    }
+.button
+{
+	background-color:#303;
+	border:solid 1px #FFF;
+}
+.button:hover
+{
+	background-color:#303;
+	border:solid 1px #FFF;
+	color:#FFF;
+}
+
+</style></head>
+
+<body>
+<header>
+	<div style="background-color:#303; height:200px; color:#FFF" class="jumbotron">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-5 col-sm- col-xs-12">
+    <i class="fa fa-2x fa-cloud"> &nbsp;Weather App </i>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+    <p style="color:#FFF; font-weight:bold; font-size:36px">Select City:</p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-2 col-sm-2 col-xs-2">
+    <form>
+    <div class="form-group">
+    <div class="input-group">
+    <select id="list" class="form-control">
+    	<option value="select" selected="">Select</option>
+        <option value="1174872">Karachi</option>
+        <option value="1176615">Islamabad</option>
+        <option value="1172451">Lahore</option>
+        <option value="1170880">Mardan</option>
+        <option value="1167528">Quetta</option>
+        <option value="1168197">Peshawar</option>
+    </select>
+    </div>
+    </div>
+    </form> 
+    </div>
+    <div class="col-md-2">
+    <button id="btn" class="btn btn-lg button">Search</button>
+    </div>
+    </div>
+    </div>
+</div>
+</header>
+<div class="container">
+	<div class="table-responsive">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+ <table class="table table-striped" id="tableBody">
+ </table>
+</div>
+
+<div class="modal fade" id="newWindow">
+	<div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-body">
+    <p class="lead" id="innerContent"></p>
+    </div>
+    </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myJs.js"></script>
+
+</body>
+</html>
